@@ -1,0 +1,28 @@
+<%-include('./partials/header')%>
+    
+<body style="background-color: white;">
+    
+
+    <div class="container mt-3" id="error">
+        <%- include("./partials/flash")%>
+        <h1>This site can’t be reached</h1>
+        <br>
+        <br>
+        <h3>localhost refused to connect.</h3>
+        <br>
+        <br>
+        <h3>Try:</h3>
+        <ul>
+            <li>Checking the connection</li>
+            <li>Checking the proxy and the firewall</li>
+        </ul>
+        <button type="button" class="btn btn-primary">Reload</button>
+    
+    </div>
+</body>
+
+    
+
+
+
+

@@ -1,0 +1,38 @@
+.recipes {
+    margin: 5px auto;
+  }
+  .recipes .card img {
+    padding: 17px;
+    height: 267px;
+  }
+  
+  .recipes .card {
+    text-align: center;
+    box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.5);
+    margin: 5px auto;
+    width: 90%;
+    height: 98%;
+  }
+  
+  #heading {
+    width: 98%;
+    background-color: #820263;
+    padding: 16px;
+    margin: 9px auto;
+    border-radius: 10px;
+  }
+  
+  .navbar-brand {
+    font-family: "Orbitron", sans-serif;
+    letter-spacing: 0.1em;
+  }
+
+  .hand-writting{
+    font-family: 'Lobster', cursive;
+    color: #25ced1;
+  }
+  body{
+    background-color: #f6ae2d;
+  }
+ 
+ 

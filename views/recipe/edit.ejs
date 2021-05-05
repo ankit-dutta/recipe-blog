@@ -1,0 +1,57 @@
+<%-include('../partials/header')%>
+<%-include('../partials/navbar')%>
+
+
+
+<div class="container" style="margin-top:5rem;width:80vw;margin-bottom: 11rem;">
+
+    <form class="validated-form" action="/recipes/<%=recipe._id%>?_method=PATCH" method="POST" style="max-width:70%;margin:10px auto" >
+        <div class="mb-3">
+          <label for="name" class="form-label">Name</label>
+          <input type="text" class="form-control" id="name" placeholder="Recipe Name" name="recipe[name]"  value="<%=recipe.name%>" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="mb-3">
+          <label for="img" class="form-label">Image URL</label>
+          <input type="text" class="form-control" id="img" placeholder="Image URL" name="recipe[img]"  value="<%=recipe.img%>" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        
+
+        <div class="mb-3">
+            <label for="desc" class="form-label">Description</label>
+            <textarea class="form-control" id="desc" cols="30" rows="5" name="recipe[desc]" required><%=recipe.desc%></textarea>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="mb-3">
+            <label for="ingridient" class="form-label">Ingredient</label>
+            <input type="text" class="form-control" id="ingridient" placeholder="ingridient" name="recipe[ingridient]"  value="<%=recipe.ingridient%>" required>
+            <div class="valid-feedback">
+              Looks good!
+            </div>
+          </div>
+          <div class="mb-3">
+          <label for="procedure" class="form-label">Procedure</label>
+          <input type="text" class="form-control" id="procedure" placeholder="Procedure" name="recipe[procedure]"  value="<%=recipe.procedure%>" required>
+          <div class="valid-feedback">
+            Looks good!
+          </div>
+        </div>
+        <div class="mb-3">
+        <label for="nutrients" class="form-label">Nutrients</label>
+        <input type="text" class="form-control" id="nutrients" placeholder="nutrients" name="recipe[nutrients]"  value="<%=recipe.nutrients%>" required>
+        <div class="valid-feedback">
+          Looks good!
+        </div>
+      </div>
+        <button type="submit" class="btn btn-success">Submit</button>
+      </form>
+      </div>
+
+      <%-include('../partials/footer')%>
